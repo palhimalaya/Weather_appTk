@@ -50,7 +50,7 @@ def getWeather():
         pressure = weather_data['main']['pressure']
         humidity = weather_data['main']['humidity']
         wind = weather_data['wind']['speed']
-        sunset_unix = weather_data['sys']['sunrise']
+        sunset_unix = weather_data['sys']['sunset']
         sunset_readable = dt.datetime.fromtimestamp(sunset_unix)
         sunrise_unix = weather_data['sys']["sunrise"]
         sunrise_readable = dt.datetime.fromtimestamp(sunrise_unix)
